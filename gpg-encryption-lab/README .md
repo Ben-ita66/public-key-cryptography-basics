@@ -45,7 +45,7 @@ Expiry: 0 (no expiry)
 Name: Test User  
 Email: test@lab.com  
 
-![Key Generation](screenshots/1-key-generation.png)
+![Key Generation](screenshots/key-generation.png)
 
 ---
 
@@ -70,7 +70,7 @@ gpg --encrypt --recipient test@lab.com messages.txt
 
 Output: `messages.txt.gpg`
 
-![Encryption](screenshots/2-encryption.png)
+![Encryption](screenshots/encryption.png)
 
 ---
 
@@ -82,7 +82,7 @@ gpg --decrypt messages.txt.gpg
 
 Enter passphrase → original message appears.
 
-![Decryption](screenshots/3-decryption.png)
+![Decryption](screenshots/decryption.png)
 
 ---
 
@@ -93,7 +93,7 @@ gpg --delete-secret-keys test@lab.com
 gpg --delete-keys test@lab.com
 ```
 
-![Delete Keys](screenshots/4-delete-keys.png)
+![Delete Keys](screenshots/delete-keys.png)
 
 ---
 
@@ -121,7 +121,7 @@ Running `cat messages.txt.gpg` without the private key returns
 pure gibberish — unreadable binary data. This is what encryption 
 is supposed to look like.
 
-![Encrypted File Contents](screenshots/5-encrypted-file-contents.png)
+![Encrypted File Contents](screenshots/encrypted-file-contents.png)
 
 ---
 
