@@ -134,3 +134,14 @@ SCP failed because SSH was not active on Kali.
 ```bash
 sudo systemctl start ssh
 ```
+
+## How This Works in the Real World
+
+This lab mirrors exactly how encrypted communication works outside the lab:
+
+- **Encrypted email** - tools like Thunderbird with Enigmail use the same public/private key model
+- **Threat intelligence sharing** - security teams exchange sensitive indicators without exposing them in transit
+- **Software signing** - developers sign releases with their private key so users can verify authenticity using the public key
+- **File protection** - confidential files moving between systems are encrypted so only the intended recipient can open them
+
+
